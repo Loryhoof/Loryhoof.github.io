@@ -1,0 +1,36 @@
+import { CharacterStateBase } from './_stateLibrary';
+import { ICharacterState } from '../../interfaces/ICharacterState';
+import { Character } from '../Character';
+export declare class InitBlackjack extends CharacterStateBase implements ICharacterState {
+    suits: any[];
+    values: any[];
+    deck: any[];
+    players: any[];
+    currentPlayer: number;
+    chair: THREE.Object3D;
+    dealSound: any;
+    winSound: any;
+    world: any;
+    character: Character;
+    betAmount: number;
+    betInterval: number;
+    isPlaying: boolean;
+    constructor(character: Character, chairObj: any);
+    startblackjack(): void;
+    createDeck(): void;
+    shuffle(): void;
+    createPlayers(num: any): void;
+    createPlayersUI(): void;
+    dealHands(): void;
+    renderCard(card: any, player: any): void;
+    getCardUI(card: any): any;
+    getPoints(player: any): any;
+    updatePoints(): void;
+    hitMe(): void;
+    stay(): void;
+    end(): void;
+    check(): void;
+    updateDeck(): void;
+    update(timeStep: number): void;
+    onInputChange(): void;
+}
