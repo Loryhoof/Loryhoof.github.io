@@ -5,7 +5,7 @@
 	<title>CrookTown</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-<link href="./mainmenu.css" rel="stylesheet">
+<link href="mainmenu.css" rel="stylesheet">
 </head>
 
 
@@ -44,9 +44,9 @@
 <body>
 
     <div id="peepoSad2" >
-        <img style="width: 40%" src="src/img/banner.png" alt="Avatar" >
+        <img style="width: 25%" src="banner.png" alt="Avatar" >
         <div class="container">
-          <img src="src/img/survive.png" alt="Avatar" class="image">
+          <img src="survive.png" alt="Avatar" class="image">
           
           <div class="middle">
             <button onclick="loadWinter()" type="button" class="btn btn-lg btn-primary">Join</button>
@@ -54,30 +54,27 @@
 
         </div>
 
-        <!--<div class="container">
-          <img src="src/img/freeroam.png" alt="Avatar" class="image">
-          <div class="middle">
-            <button onclick="loadMain()" type="button" class="btn btn-lg btn-primary">Join</button>
-          </div>
-          
-        </div>-->
+        <div class="container" style="text-align: left;">
+            <div class="infobox">
+                <h4>Switch Weapons: <span style="color:red">Q</span></h3>
+                <h4>Reload: <span style="color:red">R</span></h3>
+
+                <p>Only SMG, Shotgun & C4 work now</p>
+
+                <p>This is for the sole purpose of testing the shooting effects. Still in a very buggy state.</p>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <a href="https://discord.gg/juYbPmmwzg">Discord</a>
+        </div>
+
     </div>  
 
 	<script src="build/sketchbook.min.js"></script>
 	<script>
 
-
-        function loadMain()
-        {
-            document.getElementById("peepoSad2").style.display = "none";
-            const world = new Sketchbook.World('build/assets/world.glb');
-        }
-
-        function loadNuke()
-        {
-            document.getElementById("peepoSad2").style.display = "none";
-            const world = new Sketchbook.World('build/assets/nuketown.glb');
-        }
 
         function loadWinter()
         {

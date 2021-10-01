@@ -6,6 +6,13 @@
    
 }
 
+a, u {
+  text-decoration: none;
+  text-shadow: none;
+  font-weight: bold;
+  color: black;
+}
+
 .container {
   position: relative;
 
@@ -27,6 +34,12 @@
   backface-visibility: hidden;
   border: solid 2px #e6e6e6;
  
+}
+
+.infobox {
+
+  text-shadow: none;
+
 }
 
 .modeDesc {
