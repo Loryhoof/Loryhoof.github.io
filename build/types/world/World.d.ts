@@ -234,6 +234,7 @@ export declare class World {
     private generateHTML;
     getTerrainPixelData(img: any, scale: any): any;
     loadRealHeight(world: World): void;
+    spawnTrees(world: World): void;
     loadHeight(world: World): void;
     loadHeightOnceMore(world: World): void;
     loadHeightmap(world: World): void;
