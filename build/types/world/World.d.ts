@@ -167,8 +167,9 @@ export declare class World {
     lootChute: any;
     lootParent: THREE.Object3D;
     sunObject: THREE.Object3D;
-    zombiePrefab: any;
-    zombieDetonPrefab: any;
+    zombiePrefab: Character;
+    zombieDetonPrefab: Character;
+    scenePath: string;
     constructor(worldScenePath?: any);
     shakeEverything(): void;
     spawnNewAI(npcType: any, npcRole: any): void;

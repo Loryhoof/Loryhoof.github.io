@@ -54,9 +54,17 @@
 <body>
 
     <div id="peepoSad2" >
-        <img style="width: 25%" src="banner.png" alt="Avatar" >
+        <img style="width: 20%" src="banner.png" alt="Avatar" >
+
+        <div class="infobox" style="display: inline-table; text-align: left; ">
+                <p>Switch Weapons: <span style="color:red"> Q </span></p>
+                <p>Reload: <span style="color:red"> R </span></p>
+                
+            </div>
         <div class="container">
           <img src="survive.png" alt="Avatar" class="image">
+
+
           
           <div class="middle">
             <button onclick="loadWinter()" type="button" class="btn btn-lg btn-primary">Join</button>
@@ -64,16 +72,20 @@
 
         </div>
 
-        <div class="container" style="text-align: left;">
-            <div class="infobox">
-                <h4>Switch Weapons: <span style="color:red">Q</span></h3>
-                <h4>Reload: <span style="color:red">R</span></h3>
 
-                <p>Only SMG, Shotgun & C4 work now</p>
-
-                <p>This is for the sole purpose of testing the shooting effects. Still in a very buggy state.</p>
-            </div>
+        <div class="container">
+          <img src="build/assets/textures/sandbox.png" alt="Avatar" class="image">
+          <div class="middle">
+            <button onclick="loadSandbox()" type="button" class="btn btn-lg btn-primary">Join</button>
+          </div>
+          
         </div>
+
+
+
+
+        
+
 
 
         <div class="container">
@@ -90,6 +102,13 @@
         {
             document.getElementById("peepoSad2").style.display = "none";
             const world = new Sketchbook.World('build/assets/winter.glb');
+        }
+
+
+        function loadSandbox()
+        {
+            document.getElementById("peepoSad2").style.display = "none";
+            const world = new Sketchbook.World('build/assets/sandbox.glb');
         }
 
 
