@@ -11,6 +11,7 @@ import { IUpdatable } from '../interfaces/IUpdatable';
 import { Character } from '../characters/Character';
 import { Path } from './Path';
 import { Vehicle } from '../vehicles/Vehicle';
+import { DynamicObject } from './DynamicObject';
 import { Scenario } from './Scenario';
 import { Sky } from './Sky';
 export declare class World {
@@ -40,6 +41,7 @@ export declare class World {
     scenarios: Scenario[];
     characters: Character[];
     vehicles: Vehicle[];
+    dynamics: DynamicObject[];
     paths: Path[];
     scenarioGUIFolder: any;
     updatables: IUpdatable[];
